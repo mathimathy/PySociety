@@ -139,7 +139,6 @@ class Server:
         except Exception as e:
             print("Erreur: "+str(e))
         finally:
-            self.db.close()
             self.socket.close()
 
 if __name__=="__main__":
